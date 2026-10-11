@@ -1,0 +1,9 @@
+streamlit==1.38.0
+deep-translator==1.11.4
+SpeechRecognition==3.10.4
+gTTS==2.5.3
+requests==2.32.3
+pandas==2.2.2
+python-dotenv==1.0.1
+pydub==0.25.1
+langdetect==1.0.9

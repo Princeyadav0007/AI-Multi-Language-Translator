@@ -1,0 +1,96 @@
+/* Module 2: Advanced UI — Dark Glassmorphism Theme */
+
+.stApp {
+    background: radial-gradient(circle at 20% 20%, #1b1330 0%, #0f1117 45%, #0a0b10 100%);
+    color: #F5F5F7;
+}
+
+/* Hide default streamlit chrome */
+#MainMenu, footer {visibility: hidden;}
+
+/* Glass cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* App header */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0 22px 0;
+}
+.app-header h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    background: linear-gradient(90deg, #A78BFA, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.app-logo {
+    font-size: 2rem;
+}
+
+/* Output card */
+.output-card {
+    background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(167,139,250,0.06));
+    border: 1px solid rgba(167,139,250,0.35);
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Buttons */
+div.stButton > button {
+    background: linear-gradient(90deg, #7C3AED, #A78BFA);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.55em 1.4em;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(124,58,237,0.45);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(167,139,250,0.18);
+    color: #C4B5FD;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: rgba(15, 17, 23, 0.9);
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Metric-like confidence bar */
+.confidence-bar-bg {
+    background: rgba(255,255,255,0.08);
+    border-radius: 999px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+.confidence-bar-fill {
+    background: linear-gradient(90deg, #7C3AED, #A78BFA);
+    height: 100%;
+    border-radius: 999px;
+}
